@@ -1,0 +1,14 @@
+library(readr)
+
+task1 <- read.csv("C:/Users/netra/Desktop/task1.txt")
+  View(task1)
+  
+  
+  regression <- lm(Scores ~ Hours , data = task1 )
+  summary(regression)
+
+  
+   library(ggplot2)
+
+plot(task1$Hours, task1$Scores, xlab = 'Hours', ylab = 'Scores', main='Linear regression', col='red')
+abline(regression)
