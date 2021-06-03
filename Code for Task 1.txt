@@ -1,4 +1,4 @@
-
+ 
 select sum((Hours - Hours_bar) * (Scores - Scores_bar)) / sum((Hours - Hours_bar) * (Hours - Hours_bar)) as slope
  from (
  select Hours, avg(Hours) over () as Hours_bar,
