@@ -12,3 +12,6 @@ task1 <- read.csv("C:/Users/netra/Desktop/task1.txt")
 
 plot(task1$Hours, task1$Scores, xlab = 'Hours', ylab = 'Scores', main='Linear regression', col='red')
 abline(regression)
+
+#For student studies for 9.25 hrs/day #y=mx+c 
+Predicted_score =  9.7758*9.25+2.4837 
